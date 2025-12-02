@@ -1,0 +1,19 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug STM32F4",
+      "type": "cortex-debug",
+      "request": "launch",
+      "servertype": "openocd",
+      "executable": "./build/stm32f407_baremetal.elf",
+      "cwd": "${workspaceRoot}",
+      "configFiles": [
+        "interface/stlink.cfg",
+        "target/stm32f4x.cfg"
+      ],
+      "preLaunchTask": "build",
+      "svdFile": "${workspaceRoot}/Drivers/CMSIS/SVD/STM32F407.svd"  // ← скачайте из CMSIS-Pack!
+    }
+  ]
+}
