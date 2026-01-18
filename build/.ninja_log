@@ -1,5 +1,5 @@
 # ninja log v7
-13	46	7863810128293240	CMakeFiles/stm32f407_baremetal.dir/Core/startup_stm32f407xx.s.obj	fb61b93cbb238f55
-3	234	7863810128193352	CMakeFiles/stm32f407_baremetal.dir/Core/src/main.c.obj	41200b2296c02df5
-8	258	7863810128243291	CMakeFiles/stm32f407_baremetal.dir/Core/src/system_stm32f4xx.c.obj	a88b53381051c28d
-259	388	7863810130750796	stm32f407_baremetal	90613fede01e34be
+25	58	7904256556007080	CMakeFiles/stm32f407_baremetal.dir/Core/startup_stm32f407xx.s.obj	cbfe3633c9f7d09d
+21	290	7904256555957131	CMakeFiles/stm32f407_baremetal.dir/Core/src/system_stm32f4xx.c.obj	b968521e661a403c
+16	293	7904256555917188	CMakeFiles/stm32f407_baremetal.dir/Core/src/main.cpp.obj	8700548e42f4f825
+293	430	7904256558680667	stm32f407_baremetal.elf	eedd4bd4469c7f9

@@ -1,4 +1,4 @@
-# Install script for directory: K:/ProjGit/STM/stm32f407-template
+# Install script for directory: K:/ProjGit/RS407GPIO
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,7 +40,7 @@ endif()
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "K:/ProjGit/STM/stm32f407-template/build/install_local_manifest.txt"
+  file(WRITE "K:/ProjGit/RS407GPIO/build/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
 if(CMAKE_INSTALL_COMPONENT)
@@ -56,6 +56,6 @@ else()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "K:/ProjGit/STM/stm32f407-template/build/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "K:/ProjGit/RS407GPIO/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

@@ -1,7 +1,7 @@
 {
 	"InstallScripts" : 
 	[
-		"K:/ProjGit/STM/stm32f407-template/build/cmake_install.cmake"
+		"K:/ProjGit/RS407GPIO/build/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

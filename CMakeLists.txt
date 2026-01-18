@@ -1,17 +1,24 @@
 cmake_minimum_required(VERSION 3.20)
-project(stm32f407_baremetal LANGUAGES C ASM)
+project(stm32f407_baremetal LANGUAGES C CXX ASM)
 
 set(MCU_FLAGS "-mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard")
-set(CMAKE_C_FLAGS "${MCU_FLAGS} -DSTM32F407xx -O2 -g3 -Wall -Wextra -ffunction-sections -fdata-sections")
+
+set(CMAKE_C_FLAGS   "${MCU_FLAGS} -DSTM32F407xx -O2 -g3 -Wall -Wextra -ffunction-sections -fdata-sections")
+set(CMAKE_CXX_FLAGS "${MCU_FLAGS} -DSTM32F407xx -O2 -g3 -Wall -Wextra -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti")
 set(CMAKE_ASM_FLAGS "${MCU_FLAGS} -g3")
 
 set(SOURCES
-    "${CMAKE_CURRENT_SOURCE_DIR}/Core/src/main.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/Core/src/main.cpp"
     "${CMAKE_CURRENT_SOURCE_DIR}/Core/src/system_stm32f4xx.c"
     "${CMAKE_CURRENT_SOURCE_DIR}/Core/startup_stm32f407xx.s"
 )
 
-add_executable(${PROJECT_NAME} ${SOURCES})
+#add_executable(${PROJECT_NAME} ${SOURCES})
+add_executable(stm32f407_baremetal ${SOURCES})
+
+set_target_properties(stm32f407_baremetal PROPERTIES OUTPUT_NAME "stm32f407_baremetal.elf")
+
+
 
 target_include_directories(${PROJECT_NAME} PRIVATE
     "${CMAKE_CURRENT_SOURCE_DIR}/CORE/inc"
